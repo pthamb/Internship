@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+            background-repeat: no-repeat;
+            background-size: 1600px 900px;
+            /* width: 500px;
+            height: fit-content; */
+            
+        }
+
+        .photo table{
+            border:2px solid black;
+            
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.5);
+            opacity: 0.9;        
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Give Your Preferances</h1>
+    <div class="photo">
+           
+           <table border="1" width="55%" align="center">
+            <tr>
+                <th colspan="3" style="text-align: center; background-color: palevioletred;font-size: 30px; font-family:'Comic Sans MS', cursive, sans-serif;">Lets Share Some Activites And get Connected</th>
+            </tr>
+            <tr>
+                <td width="7%">1.0</td>
+                <td width="50%">Name</td>
+                <td >
+                    <form action=""> 
+                        <input type="text" name="person">
+                        <label for="person"></label>
+                    </form>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td width="7%">2.0</td>
+                <td width="50%">Age</td>
+               <td>
+                <form action="">
+                    <input type="text" name="age">
+                    <label for="age"></label>
+                </form>
+               </td> 
+           </tr>
+
+           <tr>
+            <td width="7%">3.0</td>
+                <td width="50%">Walking(circle speed)</td>
+                <td>
+                    <form action=""> 
+                        <input type="radio" id="slow" name="speed" value="slow">
+                        <label for="slow">Slow</label>
+                        <input type="radio" id="moderate" name="speed" value="moderate">
+                        <label for="moderate">Moderate</label>
+                        <input type="radio" id="fast" name="speed" value="fast">
+                        <label for="fast">Fast</label>
+                    </form>
+                </td>
+           </tr>
+
+           <tr>
+            <td width="7%">4.0</td>
+                <td width="50%">Running(circle speed)</td>
+
+            <td>
+                <form action=""> 
+                    <input type="radio" id="slow" name="speed" value="slow">
+                    <label for="slow">Slow(Jogging)</label>
+                    <input type="radio" id="moderate" name="speed" value="moderate">
+                    <label for="moderate">Moderate</label>
+                    <input type="radio" id="fast" name="speed" value="fast">
+                    <label for="fast">Fast</label>
+                </form>
+            </td>
+                
+            
+           </tr>
+
+           <tr>
+            <td width="7%">5.0</td>
+                <td width="50%">Let's go on a Bicycle ride</td>
+
+            <td>
+                <form action=""> 
+                    <input type="radio" id="intrested" name="speed" value="intrested">
+                    <label for="intrested">Intrested</label>
+                    <input type="radio" id="not-intrested" name="speed" value="not-intrested">
+                    <label for="not-intrested">Not-Intrested</label>
+                </form>
+            </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">6.0</td>
+                <td width="50%">Gardening</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="flowers" name="speed" value="flowers">
+                    <label for="flowers">Flowers/Landscape</label>
+                    <input type="radio" id="fruits" name="speed" value="fruits">
+                    <label for="fruits">Fruit/Veg</label>
+                    <input type="radio" id="both" name="speed" value="both">
+                    <label for="both">Both</label>
+                </form>
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">7.0</td>
+                <td width="50%">Where To Swimming</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="mybackyard" name="speed" value="mybackyard">
+                    <label for="mybackyard">My Backyard</label>
+                    <input type="radio" id="public" name="speed" value="public">
+                    <label for="public">Public Pool</label>
+                    <input type="radio" id="health" name="speed" value="health">
+                    <label for="health">Health Club Pool</label>
+                </form>
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">8.0</td>
+                <td width="50%">Coffee/Tea at(15-30min)</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="myplace" name="speed" value="myplace">
+                    <label for="mypalce">My Place</label>
+                    <input type="radio" id="yours" name="speed" value="yours">
+                    <label for="yours">Yours</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">9.0</td>
+                <td width="50%">What do you like?</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="cookings" name="speed" value="cookings">
+                    <label for="mypalce">Cookings</label>
+                    <input type="radio" id="bbqs" name="speed" value="bbqs">
+                    <label for="yours">BBQs</label>
+                </form> 
+                </td>
+                </tr>
+
+                
+               
+                <tr>
+                    <td width="7%">10.0</td>
+                <td width="50%">Watching Television Sports</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="football" name="speed" value="football">
+                    <label for="football">Football</label>
+                    <input type="radio" id="basketball" name="speed" value="basketball">
+                    <label for="basketball">Basketball</label>
+                    <input type="radio" id="others" name="speed" value="others">
+                    <label for="others">Others</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">11.0</td>
+                <td width="50%">Which Type of Movies You love to watch?</td>
+
+                <td>
+                <form action=""> 
+                    <input type="text" id="movie" name="speed">
+                    <label for=""></label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">12.0</td>
+                <td width="50%">Which Type of Shoping you like to do?</td>
+
+                <td>
+                <form action=""> 
+                    <input type="text" id="shoping" name="speed">
+                    <label for="shoping"></label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">13.0</td>
+                <td width="50%">Happy Hours</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="quaterly" name="speed" value="quaterly">
+                    <label for="quaterly">Quaterly</label>
+                    <input type="radio" id="monthly" name="speed" value="monthly">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" id="weekly" name="speed" value="weekly">
+                    <label for="weekly">Weekly</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">14.0</td>
+                <td width="50%">Erands</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="emergencies" name="speed" value="emergencies">
+                    <label for="emergencies">Quaterly</label>
+                    <input type="radio" id="ocassional" name="speed" value="ocassional">
+                    <label for="ocassional">Ocassional</label>
+                    <input type="radio" id="regular" name="speed" value="regular">
+                    <label for="regular">Regular/Frequent</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">15.0</td>
+                <td width="50%">Rides</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="emergencies" name="speed" value="emergencies">
+                    <label for="emergencies">Quaterly</label>
+                    <input type="radio" id="ocassional" name="speed" value="ocassional">
+                    <label for="ocassional">Ocassional</label>
+                    <input type="radio" id="regular" name="speed" value="regular">
+                    <label for="regular">Regular/Frequent</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">16.0</td>
+                <td width="50%">Childcare</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="emergencies" name="speed" value="emergencies">
+                    <label for="emergencies">Quaterly</label>
+                    <input type="radio" id="ocassional" name="speed" value="ocassional">
+                    <label for="ocassional">Ocassional</label>
+                    <input type="radio" id="regular" name="speed" value="regular">
+                    <label for="regular">Regular/Frequent</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">17.0</td>
+                <td width="50%">Eldercare</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="emergencies" name="speed" value="emergencies">
+                    <label for="emergencies">Quaterly</label>
+                    <input type="radio" id="ocassional" name="speed" value="ocassional">
+                    <label for="ocassional">Ocassional</label>
+                    <input type="radio" id="regular" name="speed" value="regular">
+                    <label for="regular">Regular/Frequent</label>
+                </form> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td width="7%">18.0</td>
+                <td width="50%">Petcare</td>
+
+                <td>
+                <form action=""> 
+                    <input type="radio" id="emergencies" name="speed" value="emergencies">
+                    <label for="emergencies">Quaterly</label>
+                    <input type="radio" id="ocassional" name="speed" value="ocassional">
+                    <label for="ocassional">Ocassional</label>
+                    <input type="radio" id="regular" name="speed" value="regular">
+                    <label for="regular">Regular/Frequent</label>
+                </form> 
+                </td>
+                </tr>
+           </table>
+    </div>
+</body>
+</html>

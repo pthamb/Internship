@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        .logo{
+            display: inline;
+            float: left;
+            padding: 10px 0px 5px 170px;
+            background-color: white;
+        }
+        /* li{
+            display: inline;
+        float:left;
+        } */
+        .list {
+            overflow: hidden;
+            background-color: white;
+            border: 2px solid white;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .list a{
+            float: left;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 30px 10px 50px 20px;
+            text-decoration: none;
+        }
+        .list:hover{
+            color: grey;
+        }
+        .Get-involved{
+            float: left;
+            overflow: hidden;
+        }
+       .Get-involved .btn{
+            font-size: 15px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 30px 10px 50px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+
+
+        }
+        .list a:hover, .Get-involved:hover .btn {
+            color:grey;
+        }
+        .content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .content a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .content a:hover {
+            background-color: white;
+        }
+
+        .Get-invoved:hover .content {
+            display: block;
+        }
+        .grp{
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 25px;
+           
+        }
+        .grp a{
+            padding: 10px 10px 10px 10px;
+            color: white;
+        }
+        .grp2{
+            border: 1px solid green;
+            background-color: green;
+            border-radius: 25px;
+           
+        }
+        .grp2 a{
+            padding: 10px 10px 10px 10px;
+            color: white;
+        }
+        .main{
+            padding: 18px 20px 20px 40px;
+        }
+        .main button:hover{
+             background-color: white;
+        }
+
+        .me1{
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            border: 2px solid orange;
+            background-color: orange;
+            padding: 10px 40px 10px 10px;
+        }
+        p{
+            padding: 10px 20px;
+        }
+        .donate{
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: orange;
+            
+            padding: 10px 30px 10px 30px;
+            margin-left: 25px ;
+        }
+        .donate a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+        .donate:hover{
+          background-color: white;
+          
+        }
+        .donate a:hover{
+            color: orange;
+        }
+        .photo{
+            background-image: url("https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+            background-size: cover;
+            width: auto;
+            height: 700px;    
+            display: flex;
+            position: relative;
+        }
+        
+        
+       .box{
+        flex-basis: 55%;
+            border: 1px solid #44a050 ;
+            background-color:#44a050;
+            width: 500px;
+            height: 450px;
+            top: 250px;
+            left: 10px;
+            
+            position: absolute;
+            border-radius: 85px 85px 200px 85px;
+            padding: 20px 0px 0px 10px;
+            
+        
+        }
+        .text{
+            padding: 5px 0px 1px 30px;
+            
+            font-size: 50px;
+            color: white;
+        }
+        .text2{
+            padding: 1px 1px 20px 30px;
+            font-size:20px ;
+            color: white;
+            margin: -40px 0px 0px 1px;
+        }
+        .container{
+            display: flex;
+            /* text-align: center; */
+            gap: 30px;
+        
+            padding: 140px 0px 50px 220px;
+        }
+        .container div.container1{
+            flex-basis: 27%;
+            border: 1px solid white
+            ;
+            width: 50px;
+            height: 550px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 0px 0px 0px 60px;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2);
+        }
+
+        .container div.container2{
+            flex-basis: 27%;
+            border: 1px solid white;
+            width: 5px;
+            height: 550px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 0px 0px 0px 60px;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2);
+        }
+
+        .container div.container3{
+            flex-basis: 27%;
+            border: 1px solid white
+            ;
+            width: 5px;
+            height: 550px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 0px 0px 0px 60px;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2);
+        }
+        
+        .container p.inside,p.inside2,p.inside3{
+            font-size: 25px;
+            color:#44a050 ;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding: 0px 0px 0px 30px;
+        }
+
+        .container img {
+            width: 300px;
+            height: 200px;
+           padding: 0px 30px 10px 25px;
+    
+        }
+
+        .container p.in,p.in2,p.in3{
+            font-size: 18px;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            color: grey;
+        }
+        .container a
+        {
+             text-decoration: none;
+             color: grey;
+            
+        }
+
+        .container p a{
+            text-align: left;
+        }
+        .my{
+            display: flex;
+        }
+        .my img 
+        {
+            flex-basis: 35%;
+            display: inline;
+            border: 1px solid white;
+           padding: 70px 0px 50px 240px;
+           border-radius:180px 180px 180px 180px ;
+        }
+
+        .my p.my1 {
+            flex-basis: 35%;
+            font-size:17px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 240px 100px 100px 40px;
+            color: grey;
+        }
+
+        /* .my p.my2{
+              
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 300px 800px 0px 0px;
+        } */
+
+        button.switch{
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 50px;
+            padding: 10px 30px 10px 30px;
+
+        }
+
+        button.switch:hover{
+            background-color: darkgrey;
+        }
+
+        .be p.do{
+            font-size: 40px;
+            color: #44a050;
+            text-align: center;
+        }
+        .boxes{
+            display: flex;
+            padding: 20px 0px 50px 300px;
+            gap:30px;
+        }
+
+        .boxes div.boxes1{
+            flex-basis: 24%;
+            border: 1px solid white;
+            text-align: center;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.1);
+
+        }
+
+        .boxes div.boxes2{
+            flex-basis: 24%;
+            border: 1px solid white;
+            text-align: center;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.1);
+        }
+
+        .boxes div.boxes3{
+            flex-basis: 24%;
+            border: 1px solid white;
+            text-align: center;
+            box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.1);
+        }
+
+        
+            
+            
+        
+
+ 
+    </style>
+</head>
+<body>
+   
+    <div class="list">
+
+        <div class="logo">
+            <img src="https://www.neighbourhoodconnect.org.au/wp-content/uploads/Logo-1.png" alt="">
+        </div>
+        
+        <a href="#">HOME</a>
+            <div class="Get-involved">
+                <button class="btn">GET-INVOLVED
+                    <i class="fa fa-caret-down"></i>
+
+                </button>
+                <div class="content">
+                    <a href="#">Become a Conector</a>
+                    <a href="#">Start a group</a>
+                    <a href="#">Become our volunteer</a>
+                    <a href="#">Become our supporter</a>
+                    <a href="#">Join our Network</a>
+                </div>
+            </div>
+            <div class="Get-involved">
+                <button class="btn">ABOUT US
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="content">
+                    <a href="#">Our Mission</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Our Freinds</a>
+                    <a href="#">Our Supporters</a>
+                    <a href="#">Our Networks</a>
+                    <a href="#">Our Imapct</a>
+                    <a href="#">Workshop and Presentation</a>
+                    <a href="#">Testimonial</a>
+                </div>
+            </div>
+            <div class="Get-involved">
+                <button class="btn">RESOURCES & INSPIRATION
+                    <i class="fa fa-caret-down"></i>
+
+                </button>
+                <div class="content">
+                    <a href="#">Stories from the Neighbourhood</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Invitation for Templates</a>
+                    <a href="#">Things To do with The Neigbhours</a>
+                    <a href="#">Recomended Reads</a>
+                </div>
+            </div>
+
+            <a href="#">RESEARCH</a>
+            <a href="#">PROJECT</a>
+
+             <div class="main">
+                <button class="grp"><a href="neighbourhood_form.html">Start A Group</a></button>
+                <button class="grp2">
+                    <a href="">Get Our E-news</a>
+                </button>
+            </div>
+    </div>
+
+    
+        <div class="me1">
+            Please help us combat loneliness in our suburbs and create happier neighbourhoods.
+            <button class="donate"><a href="">Donate</a></button>
+            
+        </div>
+        <div class="photo">
+            <div class="box">
+                <p class="text">Neighbourhood<br>Connection Starts<br>Here!!
+                    <p class="text2">from invitation templates to free one to one support <br>from successful neighbourhood connectors around Australia.</p></p>
+                <!-- <p class="text2">from invitation templates to free one to one support from successful neighbourhood connectors around Australia.</p> -->
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="container1">
+                <p class="inside">Get Involved</p>
+                <img src="https://www.neighbourhoodconnect.org.au/wp-content/uploads/homepage-get-involved-1.jpg" alt="">
+                <p class="in">Join the Neighbourhood Connect Movement. You can kick off a neighbourhood event or start a group, join the network with your established group, volunteer or support us.</p>
+               <p><a href="#">Read More-></a></p> 
+            </div>
+            <div class="container2">
+                <p class="inside2">Start A Group</p>
+                <img src="https://www.neighbourhoodconnect.org.au/wp-content/uploads/nina-strehl-140734-unsplash-scaled-1-300x200.jpg" alt="">
+                <p class="in2">Keen to build a more connected neighbourhood where you live? We have free resources – ideas, examples, tools, encouragement and support!</p>
+                <p><a href="#">Read More-></a></p>
+            </div>
+            <div class="container3">
+                <p class="inside3">The NC Network</p>
+                <img src="https://www.neighbourhoodconnect.org.au/wp-content/uploads/elementor/thumbs/homepage-nc-network-1-op91zexc4f9u935mt37zfu7j18kuhy53ytjjj1gr62.jpg" alt="">
+                <p class="in3">The Neighbourhood Connect Network brings together like-minded groups across Australia, all part of a movement to create happier, more connected neighbourhoods.</p>
+                <p><a href="#">Read More-></a></p>
+            </div>
+        </div>
+        
+        <div class="my">
+            
+            <img src="https://www.neighbourhoodconnect.org.au/wp-content/uploads/studies.jpg" alt="">
+
+            <p class="my1" >Research from Australia and around the world demonstrates that 
+                 <span style="font-size: 50px; color: #44a050;">Social connections are the antidote to anxiety and depression <br>
+                <button class="switch" style="font-size: 20px; color: white;"> Read more</button></span>
+
+            </p>
+           
+            <!-- <p class="my2">Social connections are the antidote to anxiety and depression</p> -->
+        </div>
+
+        <div class="be">
+            <p class="do">Our Impact <br>
+            <span style="font-size: 18px; color:grey">We have a commitment to evaluation because it’s important to have and share<br>evidence that what we do makes a difference.</span>
+            </p>
+        </div>
+        <div class="boxes">
+            <div class="boxes1">
+                <p class="make1" style="color: #44a050; font-size: 35px;">59</p>
+                <p class="make1.1" style="color: grey;">Number of groups started with our support since 2014</p>
+            </div>
+            <div class="boxes2">
+                <p class="make2" style="color: #44a050;font-size: 35px;">270+</p>
+                <p class="make1.2" style="color: grey;">Number of events held by NC groups in 2 years</p>
+            </div>
+            <div class="boxes3">
+                <p class="make3" style="color: #44a050; font-size: 35px;">9100+</p>
+                <p class="make1.3" style="color: grey;">Number of real-life human connection hours in 2 years</p>
+            </div>
+        </div>
+    
+   
+</body>
+</html>
